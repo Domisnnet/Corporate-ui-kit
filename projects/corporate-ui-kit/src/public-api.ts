@@ -1,5 +1,13 @@
 /*
- * Public API Surface of corporate-ui-kit
+ * public-api.ts
+ * Arquivo que define os exports públicos do seu CUK.
  */
 
-export * from './lib/corporate-ui-kit';
+// Seus Pipes (Lógica)
+// export * from './lib/pipes/currency-formatter.pipe';
+
+// Seus Componentes (UI)
+export * from './lib/components/action-button/action-button';
+
+// Seus Serviços (Regras de Negócio)
+// export * from './lib/services/auth.service';
