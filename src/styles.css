@@ -1,14 +1,1 @@
-@import 'corporate-ui-kit/styles/theme-base.css';
-
 /* You can add global styles to this file, and also import other style files */
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  background-color: var(--cuk-background-color);
-  color: var(--cuk-text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-html, body {
-  height: 100%;
-}

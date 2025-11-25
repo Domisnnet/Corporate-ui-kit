@@ -25,6 +25,7 @@
               }
             ],
             "styles": [
+              "projects/corporate-ui-kit/src/lib/styles/theme-base.css",
               "src/styles.css"
             ]
           },
