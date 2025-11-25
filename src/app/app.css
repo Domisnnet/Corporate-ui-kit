@@ -69,7 +69,9 @@
     background-color: #000000;
     padding: 20px;
     text-align: center;
-    margin-top: auto;
+    margin-top: auto; 
+    margin-left: 0;
+    margin-right: 0;
     font-size: 1.3rem;
     color: #a0a0a0; 
 }
