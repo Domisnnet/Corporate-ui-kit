@@ -4,26 +4,26 @@
 .showcase-container {
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 100%;
     max-width: 1200px; 
-    min-height: calc(100vh - 80px);
     text-align: center; 
-    color: #e0e0e0; 
 }
  
 .header {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
  
 .header h1 {
     font-size: 2.8rem;
-    color: var(--cuk-primary, #e0e0e0); 
+    color: var(--cuk-primary); 
     margin-bottom: 10px;
 }
 
 .header p {
     font-size: 1.5rem;
-    color: #a0a0a0; 
+    color: var(--cuk-secondary); 
+    margin-bottom: 20px;
 }
  
 /*
@@ -35,7 +35,7 @@
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8); 
-    border-top: 10px solid var(--cuk-primary, #007bff); 
+    border-top: 10px solid var(--cuk-primary-dark); 
 }
  
 .hero-card h2 {
@@ -47,8 +47,8 @@
  
 .hero-card p {
     font-size: 1.5rem;
-    color: #a0a0a0; 
-    margin-bottom: 30px;
+    color: var(--cuk-secondary);
+    margin-bottom: 20px;
 }
  
 /*
@@ -64,14 +64,18 @@
  * 4. Rodapé
  */
 .footer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     width: 100%; 
-    box-sizing: border-box;
-    background-color: #000000;
+    background-color: #000000; 
+}
+
+.footer span {
     padding: 20px;
     text-align: center;
     margin-top: auto; 
-    margin-left: 0;
-    margin-right: 0;
     font-size: 1.3rem;
-    color: #a0a0a0; 
+    color: var(--cuk-primary-dark);
 }
