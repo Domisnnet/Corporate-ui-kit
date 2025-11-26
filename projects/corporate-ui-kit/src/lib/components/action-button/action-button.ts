@@ -1,12 +1,13 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'cuk-action-button',
   template: `
     <button
       class="cuk-btn"
-      [class]="type()"
-      [disabled]="disabled()">
+      [class]="type"
+      [disabled]="disabled"
+      (click)="onClick()">
       <ng-content></ng-content>
     </button>
   `,
@@ -14,6 +15,12 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ActionButtonComponent {
-  type = input<'primary' | 'secondary'>('primary'); // Controla a cor/estilo
-  disabled = input(false); // Controla o estado
+  @Input() type: 'primary' | 'secondary' = 'primary'; 
+  @Input() disabled = false; 
+
+  @Output() click = new EventEmitter<void>(); 
+
+  onClick() {
+    this.click.emit(); 
+  }
 }

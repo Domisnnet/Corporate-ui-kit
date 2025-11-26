@@ -23,8 +23,8 @@ export class AppComponent {
   }
 
   abrirDoc() {
-    window.open('https://github.com/Domisnnet/Corporate-ui-kit/blob/main/README.md', '_blank');
-  }  
+    window.location.href = 'https://github.com/Domisnnet/Corporate-ui-kit/blob/main/README.md';
+  }   
 
   private initializeTheme(): void {
     const corporateTheme: CukThemeConfig = {
