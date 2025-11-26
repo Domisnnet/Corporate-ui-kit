@@ -1,3 +1,30 @@
+:root {
+    --cuk-primary: #007bff;
+    --cuk-primary-dark: #0056b3;
+    --cuk-secondary: #6c757d;
+    --cuk-secondary-dark: #545b62;
+    /* Cores de Feedback (Status/Contextuais) */
+    --cuk-success: #28a745;
+    --cuk-success-dark: #1e7e34;
+    --cuk-danger: #dc3545;
+    --cuk-danger-dark: #bd2130;
+    --cuk-warning: #ffc107;
+    --cuk-warning-dark: #d39e00;
+    --cuk-info: #17a2b8;
+    --cuk-info-dark: #0f6674;
+    --cuk-light: #f8f9fa;
+    --cuk-dark: #343a40;
+    /* Cores Neutras (Fundo & Texto) */
+    --cuk-text-default: #e0e0e0;
+    --cuk-text-light: #ffffff;
+    --cuk-text-medium: #999999;
+    --cuk-text-muted: #aaaaaa;
+    --cuk-text-dark: #333333;
+    --cuk-text-destak: #888888;
+    /* Cores de Fundo Específicas para o seu tema atual (Dark Mode) */
+    --cuk-bg-body: #1a1a1a;
+    --cuk-bg-card: #2c2c2c;
+}
 
 html {
     height: 100%;
@@ -7,6 +34,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--cuk-bg-body);
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -21,5 +49,4 @@ app-root {
     height: 100%;
 }
  
-@import './_cuk-colors.css';
 @import '~corporate-ui-kit/styles/theme-base.css';
