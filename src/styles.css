@@ -1,5 +1,3 @@
-@import 'corporate-ui-kit/styles/theme-base.css';
-
 html {
     height: 100%;
 }
@@ -12,12 +10,14 @@ body {
     display: flex;
     flex-direction: column;
 }
-
+ 
 app-root {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    flex-grow: 1; 
     width: 100%;
     box-sizing: border-box;
     height: 100%;
 }
+ 
+@import '~corporate-ui-kit/styles/theme-base.css';
